@@ -95,7 +95,6 @@
     content.innerHTML = `<button class="back-inline" type="button" data-go="services">${icon('back')} Ver todos los servicios</button>
       <div class="detail-hero"><span class="detail-icon">${icon('steth')}</span><div><small>ATENCIÓN MÉDICA ESPECIALIZADA</small><h3>${esc(s.titulo)}</h3></div></div>
       <p class="detail-copy">${esc(s.detalle)}</p>
-      <div class="info-note">${icon('doc')} La pertinencia de cada procedimiento, sus indicaciones y su costo se determinan directamente durante la atención médica. No se publican precios en esta página.</div>
       <div class="modal-bottom-action"><button class="btn btn-dark" type="button" data-go="choose">Consultar disponibilidad ${icon('arrow')}</button></div>`;
   }
   function showChoose() {
@@ -117,7 +116,6 @@
       <div class="agenda-header agenda-header-second"><div><span class="step-number">02</span><strong>Selecciona el horario</strong></div></div>
       <div id="timeChoices" class="time-choices"></div>
       <label class="patient-label" for="patientName">Tu nombre <span>(opcional)</span></label><input class="patient-input" id="patientName" maxlength="80" autocomplete="name" placeholder="¿Cómo te llamas?">
-      <div class="info-note">${icon('calendar')} Los horarios publicados son orientativos. Enviar el mensaje no confirma ni bloquea una cita; recibirás confirmación directamente del consultorio.</div>
       <button id="sendAppointment" class="btn btn-dark send-appointment" type="button" disabled>${icon('whatsapp')} Solicitar cita por WhatsApp ${icon('arrow')}</button>${phoneDigits() ? `<a class="agenda-call" href="tel:${esc(phoneDigits())}">${icon('phone')} Llamar al consultorio</a>` : ''}<p class="agenda-help" id="agendaHelp"></p>`;
     $('weekPrev').addEventListener('click', () => { if (weekOffset >= 7) { weekOffset -= 7; selectedDate = ''; selectedTime = ''; renderCalendar(sede); }});
     $('weekNext').addEventListener('click', () => { if (weekOffset < 84) { weekOffset += 7; selectedDate = ''; selectedTime = ''; renderCalendar(sede); }});
