@@ -21,3 +21,38 @@
 .admin-body{background:#f2f4f0}.admin-header{padding:28px 0;background:var(--navy);color:#fff}.admin-header h1{font:35px var(--serif);margin:8px 0}.admin-header p{font-size:13px;color:#c3d1d5;line-height:1.6}.admin-shell{max-width:1050px;margin:30px auto 60px;padding:0 20px}.admin-banner{border:1px solid #eed2a4;background:#fff8e8;color:#664b2a;border-radius:12px;padding:16px 20px;line-height:1.65;font-size:13px}.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px}.admin-card{background:#fff;border:1px solid #dfe4df;padding:25px;border-radius:14px;box-shadow:0 5px 20px #102a300a}.admin-card h2{font:27px var(--serif);color:var(--navy);margin-bottom:17px}.admin-card label{display:block;font-size:12px;font-weight:650;margin:13px 0 7px}.admin-card input,.admin-card select{width:100%;height:43px;padding:0 12px;border:1px solid #cfdad5;border-radius:8px;background:white;color:var(--ink)}.admin-card .input-hint{font-size:11px;line-height:1.6;color:#70807d;margin-top:9px}.admin-card .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.admin-card .admin-action{display:inline-flex;justify-content:center;align-items:center;gap:8px;margin-top:15px;background:var(--teal);color:#fff;border:0;padding:12px 16px;border-radius:8px;font-size:13px;font-weight:650}.admin-card .admin-action.secondary{background:#edf4f0;color:var(--teal);border:1px solid #c9ded5}.admin-card .admin-action.danger{background:#fff3f0;color:#a3402f;border:1px solid #efd0ca}.admin-entries{margin-top:15px;display:grid;gap:7px}.admin-entry{display:flex;justify-content:space-between;align-items:center;gap:10px;background:#f6f8f6;border:1px solid #e6ebe7;border-radius:7px;padding:10px;font-size:12px}.admin-entry button{border:1px solid #edcec9;background:#fff3f0;color:#9b3326;padding:7px 10px;border-radius:6px}.admin-wide{grid-column:1/-1}.admin-card .admin-export{background:var(--navy);width:100%;font-size:14px;padding:15px}.admin-feedback{margin-top:12px;font-size:12px;color:var(--teal);font-weight:650;line-height:1.6}.admin-card .stacked{display:flex;flex-wrap:wrap;gap:10px}.admin-card .stacked .admin-action{margin-top:12px}@media(max-width:760px){.admin-grid{grid-template-columns:1fr}.admin-card{padding:18px}.admin-shell{padding:0 14px}.admin-card .form-row{grid-template-columns:1fr}}
 
 .agenda-call{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px;padding:11px 15px;border:1px solid #b7d5ca;border-radius:9px;background:#f3f9f5;color:var(--teal);font-size:13px;font-weight:700}.agenda-call svg{width:17px;height:17px}.agenda-call:hover{background:#e5f3eb}
+
+/* Identidad médica y pie de página integrado */
+.header-content{min-height:106px;gap:24px}
+.identity{gap:16px;flex-shrink:0}
+.identity-mark{width:68px;height:68px;flex:0 0 68px;border-radius:50%;border:1px solid #d5b48388;background:radial-gradient(circle,#d5b48312,transparent 75%)}
+.identity-mark svg{width:46px;height:46px;stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.identity-text{gap:7px;letter-spacing:.025em}
+.identity-text b{font:500 clamp(21px,2.4vw,32px)/1.1 var(--serif);color:#fff;white-space:nowrap}
+.identity-text small{font-size:11px;letter-spacing:.19em;color:var(--gold);font-weight:600}
+.footer{background:linear-gradient(115deg,#091c2c,#123440);padding:0 0 30px;color:#fff}
+.footer .closing-section{background:none;padding:48px 0 34px;color:inherit}
+.footer .closing-inner{gap:24px}
+.footer .closing-inner h2{margin-top:10px}
+.footer-inner{position:relative;padding-top:25px}
+.footer-inner::before{content:"";position:absolute;top:0;left:24px;right:24px;height:1px;background:#d5b48340}
+.footer-brand{font-size:21px;gap:7px}
+.footer-brand small{font-size:12px;color:#b9c8cc}
+@media(max-width:1080px){.identity-text b{font-size:24px}.identity-mark{width:58px;height:58px;flex-basis:58px}.identity-mark svg{width:39px;height:39px}.header-nav{gap:14px}}
+@media(min-width:801px) and (max-width:950px){.identity{gap:10px}.identity-text b{font-size:21px}.identity-text small{font-size:9px}.header-nav{gap:12px}.header-nav .nav-action{padding:11px}}
+@media(max-width:800px){.header-content{min-height:90px}.footer .closing-inner,.footer-inner{align-items:center;text-align:center}.footer-links{justify-content:center}.footer .closing-section{padding:40px 0 30px}}
+@media(max-width:520px){.header-content{min-height:82px;gap:10px}.identity{gap:10px;flex-shrink:1}.identity-mark{width:48px;height:48px;flex-basis:48px}.identity-mark svg{width:34px;height:34px}.identity-text b{font-size:clamp(16px,4.5vw,22px);white-space:normal}.identity-text small{font-size:9px;letter-spacing:.075em}.footer{padding-bottom:92px}.footer-inner::before{left:18px;right:18px}.footer .closing-inner h2{font-size:34px}.footer-brand{font-size:19px}}
+
+/* Iconos médicos y alineación de agenda */
+.identity-mark svg{width:49px;height:49px}
+.shortcut-icon svg,.detail-icon svg,.small-icon svg{width:27px;height:27px;stroke-width:1.9}
+.calendar-nav{display:grid;grid-template-columns:32px minmax(0,1fr) 32px;align-items:center;gap:8px;padding:8px 10px}
+.calendar-nav>span{text-align:center;line-height:1.3}
+.week-arrow{position:relative;width:32px;height:32px;padding:0;font-size:0;line-height:1;display:grid;place-items:center}
+.week-arrow::after{content:"";width:7px;height:7px;border-top:2px solid currentColor;border-right:2px solid currentColor;transform:rotate(45deg);margin-right:3px}
+#weekPrev::after{transform:rotate(-135deg);margin-right:0;margin-left:3px}
+.day-strip{align-items:stretch;grid-template-columns:repeat(7,minmax(0,1fr))}
+.day-button{width:100%;display:grid;grid-template-rows:16px 30px minmax(14px,auto);justify-items:center;align-items:center;align-content:center;gap:4px;text-align:center;padding:8px 2px}
+.day-button small,.day-button b,.day-button span{line-height:1.15;margin:0;text-align:center;max-width:100%}
+.day-button b{font-variant-numeric:lining-nums tabular-nums}
+@media(max-width:520px){.identity-mark svg{width:36px;height:36px}.day-button{grid-template-rows:13px 25px minmax(12px,auto);gap:3px;padding:6px 1px}.day-button span{overflow-wrap:anywhere}}
